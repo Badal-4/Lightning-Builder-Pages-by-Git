@@ -1,0 +1,16 @@
+Yes, we can deploy the Lightning builder pages by GIT using metadata that can be retrieved by the package.xml file by below:
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<types>
+<members>*</members>
+<name>SiteDotCom</name>
+</types>
+<version>52.0</version>
+</Package>
+
+
+
+So, once we retrieve these SiteDotCom files then we will have a folder with binary files regarding a particular community. But we can't see the changes in files due to unreadable binary files but yes we can deploy it to Salesforce Org and the changes will reflect in the target org.
